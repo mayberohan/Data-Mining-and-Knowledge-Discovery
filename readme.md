@@ -6,19 +6,7 @@
 [![Course](https://img.shields.io/badge/Course-DMS672-9cf)]()
 
 A collection of 5 assignments and a final machine learning project completed as part of the **DMS672: Data Mining & Knowledge Discovery** course.  
-Work includes EDA, preprocessing, PCA, decision trees, and supervised ML modeling.
-
----
-
-## 📌 Table of Contents
-
-- [Repository Structure](#repository-structure)
-- [Assignments Summary](#assignments-summary)
-- [Final Project — Student Performance Predictor](#final-project--student-performance-predictor)
-- [Tech Stack](#tech-stack)
-- [How to Run](#how-to-run)
-- [Author](#author)
-- [License](#license)
+Work includes Exploratory Data Analysis (EDA), extensive preprocessing, PCA, decision trees, and supervised ML modeling.
 
 ---
 
@@ -31,105 +19,40 @@ Work includes EDA, preprocessing, PCA, decision trees, and supervised ML modelin
 ├── Assignment_4/      # Data preprocessing + PCA
 ├── Assignment_5/      # Decision Tree modeling on car + churn dataset
 ├── Project/           # Student Performance Prediction ML Project
-├── Assignments_Summary.md
 └── README.md
 
-```markdown
-# 📘 Assignments Summary — DMS672
+---
 
-This document contains a detailed summary of all five assignments submitted for the **Data Mining & Knowledge Discovery** course.
+## 📘 Assignments Summary
+
+### 📝 Assignment 1 — Telecom Churn EDA
+**Objective:** Understand customer churn behavior using Exploratory Data Analysis.
+* **Key Findings:** Analyzed customer distribution, service usage, and contract types. Identified that short tenure and high monthly charges are strong indicators of churn.
+
+### 📝 Assignment 2 — Titanic Dataset EDA
+**Objective:** Analyze factors affecting survival rates on the Titanic.
+* **Key Findings:** Visualized survival trends based on gender, class, and age. Confirmed that female passengers and 1st class ticket holders had significantly higher survival rates.
+
+### 📝 Assignment 3 — Advanced Titanic EDA
+**Objective:** Deep dive into feature interactions and multivariate analysis.
+* **Key Findings:** Explored family size impact and cabin location patterns. Found that smaller families had better survival chances than those traveling alone or in large groups.
+
+### 📝 Assignment 4 — Data Preprocessing + PCA
+**Objective:** Clean the dataset and reduce dimensionality for modeling.
+* **Techniques:** Handled missing values, capped outliers, and performed string normalization.
+* **PCA:** Reduced features to **4 Principal Components** while retaining ≥ 95% of the variance.
+
+### 📝 Assignment 5 — Decision Trees
+**Objective:** Build and optimize Decision Tree classifiers.
+* **Part A (Car Evaluation):** Achieved **99% accuracy** using full tree modeling.
+* **Part B (Telco Churn):** Compared full-grown vs. pruned trees. Pruning significantly improved the model's ability to generalize to new data.
 
 ---
 
-## 📝 Assignment 1 — Telecom Churn EDA
+## 🎓 Final Project — Student Performance Predictor
 
-Dataset: Telecom Customer Churn  
-Objective: **Understand churn behavior** using EDA  
-Key Analysis Performed:
-- Customer distribution analysis
-- Contract type & churn correlation
-- Service usage behavior
-- Senior citizen churn patterns
-
-📌 Outcome: Identified key churn indicators like tenure, monthly charges, contract type, etc.
-
----
-
-## 📝 Assignment 2 — Titanic Dataset EDA
-
-Objective: Analyze **factors affecting survival**  
-Analysis Highlights:
-- Gender-based survivability trends
-- Class influence on rescue priority
-- Age vs survival probability
-- Fare distribution insights
-
-📌 Outcome: Confirmed strong gender + class impact on survival.
-
----
-
-## 📝 Assignment 3 — Advanced Titanic EDA
-
-Enhanced analytics over Assignment 2  
-Included:
-- Feature interactions
-- Family size vs survival
-- Cabin-based group patterns
-- Statistical distribution insights
-
-📌 Outcome: Additional multi-variable survival patterns discovered.
-
----
-
-## 📝 Assignment 4 — Data Preprocessing + PCA
-
-Performed:
-- Duplicate removal (651 rows)
-- Missing value imputation
-- Outlier capping
-- String normalization
-- Dropped noisy / constant columns
-- Feature Engineering:
-  - Age bands
-  - Weekly working hour bands
-- Standardization
-- PCA analysis:
-  - **4 Principal Components** explain ≥ 95% variance
-
-📌 Outcome: **Clean dataset** ready for ML modeling & feature reduction.
-
----
-
-## 📝 Assignment 5 — Decision Trees
-
-Two parts:
-
-### Part A — Car Evaluation Dataset
-- Ordinal Encoding
-- Full tree modeling
-- **99% accuracy achieved**
-
-### Part B — Telco Customer Churn
-- Preprocessing pipeline (OHE + ordinal encoding)
-- Full-grown vs pre-pruned vs post-pruned tree
-- Evaluation using recall, precision & F1-score
-
-📌 Outcome: Improved model generalization after pruning.
-
----
-
-## ✔ Summary Table
-
-| Assignment | Focus Area | Key Skills |
-|-----------|------------|------------|
-| 1 | Exploratory Data Analysis | Visualization & interpretation |
-| 2 | Basic EDA | Statistical analysis |
-| 3 | Advanced EDA | Feature interaction analysis |
-| 4 | Data preprocessing | Cleaning, PCA, feature engineering |
-| 5 | Decision Tree Modeling | Classifier development & pruning |
-
----
-
-🎯 These assignments build the foundation for supervised ML — applied in the final project.
+**Goal:** Predict student performance based on demographic and academic data using supervised machine learning.
+* **Approach:** Integrated techniques from previous assignments (EDA, Preprocessing, PCA) to build a robust predictive model.
+* **Outcome:** Successfully identified key factors influencing grades, such as study time and previous failures.
 
 ---
